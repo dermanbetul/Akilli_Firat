@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akıllı Nesne Tahminleyicisi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="badge">🧠</div>
+        <h1>Akıllı Nesne Tahminleyicisi</h1>
+        <p>Aklında bir nesne tut. Ben onu bulayım.</p>
+      </header>
+
+      <main class="panel">
+        <div class="face-card" aria-label="Sevimli çocuk yüzü">
+          <div class="kid-face">
+            <div class="hair"></div>
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+              <div class="eye left"></div>
+              <div class="eye right"></div>
+              <div class="cheek left"></div>
+              <div class="cheek right"></div>
+              <div class="smile"></div>
+            </div>
+          </div>
+        </div>
+
+        <section id="startScreen" class="screen active">
+          <div class="emoji">🤔✨</div>
+          <p>Hazır mısın?</p>
+          <button id="startBtn" class="primary-btn">Başlat</button>
+        </section>
+
+        <section id="gameScreen" class="screen">
+          <div class="status-box">
+            <span id="roundInfo">Olasılık sayısı: 0</span>
+          </div>
+
+          <h2 id="questionText">Soru buraya gelecek.</h2>
+
+          <div class="answer-row">
+            <button class="answer-btn yes" data-answer="true">Evet</button>
+            <button class="answer-btn no" data-answer="false">Hayır</button>
+          </div>
+
+          <div class="extra-actions">
+            <button id="showListBtn" class="secondary-btn">Nesnelere Bak</button>
+            <button id="restartBtn" class="secondary-btn">Yeniden Başla</button>
+          </div>
+        </section>
+
+        <section id="guessScreen" class="screen">
+          <div class="emoji">🎯</div>
+          <h2 id="guessText">Tahminim: Telefon</h2>
+          <p>Doğru mu?</p>
+          <div class="answer-row">
+            <button id="guessYesBtn" class="answer-btn yes">Evet, doğru</button>
+            <button id="guessNoBtn" class="answer-btn no">Hayır, değil</button>
+          </div>
+        </section>
+
+        <section id="customScreen" class="screen">
+          <div class="emoji">🧩</div>
+          <h2>Listemde yokmuş.</h2>
+          <p>Senin aklındaki nesneyi yaz, ona uygun bir cevap ekleyeyim.</p>
+          <input id="customInput" type="text" placeholder="Nesnenin adını yaz" />
+          <button id="customSaveBtn" class="primary-btn">Kaydet</button>
+        </section>
+
+        <section id="listScreen" class="screen">
+          <h2>Olası Nesneler</h2>
+          <ul id="objectList"></ul>
+          <button id="backToGameBtn" class="primary-btn">Geri Dön</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
