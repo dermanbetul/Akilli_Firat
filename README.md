@@ -1,6 +1,5 @@
 # 🧠 Akıllı Fırat
-
-Fırat Üniversitesi için geliştirilmiş eğlenceli bir nesne tahmin oyunudur.
+Çocuklar için geliştirilmiş eğlenceli bir nesne tahmin oyunudur.
 
 ## 🎮 Proje Hakkında
 
