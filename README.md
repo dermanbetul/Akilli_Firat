@@ -14,8 +14,7 @@ Oyuncu sorulara "Evet" veya "Hayır" şeklinde cevap verir. Verilen cevaplara g�
 - 🎯 Olasılıkları azaltarak tahmin yapma
 - 😄 Eğlenceli kullanıcı deneyimi
 - 🧩 Yeni nesneler için geliştirilebilir yapı
-- 🎓 Fırat Üniversitesi etkinliklerinde kullanılmak üzere tasarlanmıştır
-
+  
 ## 🛠️ Kullanılan Teknolojiler
 
 - Python
